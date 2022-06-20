@@ -1,13 +1,8 @@
 $(document).ready(function () {
-  $('p').on({
-    mouseenter: function () {
-      $(this).css('background-color', 'yellow');
-    },
-    mouseleave: function () {
-      $(this).css('background-color', 'pink');
-    },
-    click: function () {
-      $(this).css('background-color', 'cyan');
-    },
+  $('#hidden').click(function () {
+    $('p').hide(1000);
+  });
+  $('#visible').click(function () {
+    $('p').show(1000);
   });
 });
