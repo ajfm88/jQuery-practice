@@ -1,5 +1,13 @@
 $(document).ready(function () {
-  $('#p1').mouseenter(function () {
-    alert('Your mouse entered paragraph 1');
+  $('p').on({
+    mouseenter: function () {
+      $(this).css('background-color', 'yellow');
+    },
+    mouseleave: function () {
+      $(this).css('background-color', 'pink');
+    },
+    click: function () {
+      $(this).css('background-color', 'cyan');
+    },
   });
 });
